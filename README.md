@@ -6,7 +6,7 @@ DOMinodes includes several methods:
 - html: allows the user to either set the innerHTML of an element by passing an argument, or returns the innerHTML of the first node in the Array
 - empty: removes all nodes in the internal array
 - append: accepts a DOMinode, HTML element, or a string. It will append the outerHTML of each element in the argument to the innerHTMl of each element in the DOMinode
-- attr:
+- attr: returns the first attribute of the first element
 - addClass: adds a class to elements passed in
 - removeClass: removes a class from elements passed in
 - children: returns a DOMinode containing all the children of all nodes in the array
