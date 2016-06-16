@@ -5,7 +5,27 @@ DOMinodes is a library based on jQuery that allows the user to make AJAX request
 
 ###Example:
 ```javascript
+DOMinode.prototype = {
+  append: function(elements){
+    if (this.nodes.length > 0) return;
+    if (typeof elements === 'object' &&
+    !(elements instanceof DOMinode)) {
+      elements = root.$l(elements);
+    }
 
+    if (typeof elements === "string") {
+      this.each(function (node) {
+        node.innerHTML += elements;
+      });
+    } else if (elements instanceof DOMinode) {
+      var node = this.nodes[0];
+      elements.each(function (childNode) {
+        node.appendChild(childNode);
+      });
+    }
+  }
+
+  //...
 ```
 
 ##Methods
