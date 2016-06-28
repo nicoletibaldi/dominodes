@@ -4,26 +4,29 @@ DOMinodes is a library based on jQuery that allows the user to make AJAX request
 ##Technical
 
 ###Example:
+##HTML Document:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOMinodes</title>
+  </head>
+  <body>
+    <h1>Some of my favorite things:</h1>
+    <ul >
+      <li class="hobbies">Music</li>
+      <li class="hobbies">Baseball</li>
+      <li>Sushi</li>
+      <li class="hobbies">Writing</li>
+      <li class="hobbies">Training dogs</li>
+      <li>Nature</li>
+    </ul>
+  </body>
+</html>
+```
+##Return all DOM elements with class name "hobbies"
 ```javascript
-DOMinode.prototype = {
-  append: function(elements){
-    if (this.nodes.length > 0) return;
-    if (typeof elements === 'object' &&
-    !(elements instanceof DOMinode)) {
-      elements = root.$l(elements);
-    }
-
-    if (typeof elements === "string") {
-      this.each(function (node) {
-        node.innerHTML += elements;
-      });
-    } else if (elements instanceof DOMinode) {
-      var node = this.nodes[0];
-      elements.each(function (childNode) {
-        node.appendChild(childNode);
-      });
-    }
-  }
+$hobbies = $dn.(".hobbies")
 
   //...
 ```
