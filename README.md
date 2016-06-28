@@ -31,7 +31,7 @@ DOMinodes is a library based on jQuery that allows the user to make AJAX request
 $hobbies = $dn(".europe");
 
   //Returns:
-  //DOMinode {nodes: [<li class="hobbies">Germany</li>, <li class="hobbies">France</li>, <li class="hobbies">Spain</li>, <li class="hobbies">Italy</li>, ]}
+  //DOMinode {nodes: [<li class="europe">Germany</li>, <li class="europe">France</li>, <li class="europe">Spain</li>, <li class="europe">Italy</li>, ]}
 ```
 
 #####Add a class to unordered list
