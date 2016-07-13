@@ -28,7 +28,7 @@ DOMinodes is a library based on jQuery that allows the user to make AJAX request
 ```
 #####Return all DOM elements with class name "europe"
 ```javascript
-$hobbies = $dn(".europe");
+$dn(".europe");
 
   //Returns:
   //DOMinode {nodes: [<li class="europe">Germany</li>, <li class="europe">France</li>, <li class="europe">Spain</li>, <li class="europe">Italy</li>, ]}
@@ -40,7 +40,7 @@ $dn("ul").addClass("countries");
 ```
 
 ##Methods
-DOMinodes includes several methods:
+DOMinodes includes the following methods:
 - ```html:``` allows the user to either set the innerHTML of an element by passing an argument, or returns the innerHTML of the first node in the Array
 - ```empty:``` removes all nodes in the internal array
 - ```append:``` accepts a DOMinode, HTML element, or a string. It will append the outerHTML of each element in the argument to the innerHTMl of each element in the DOMinode
